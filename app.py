@@ -33,13 +33,10 @@ def index():
     posts = Post.query.all() 
     return render_template("index.html",posts=posts)
 
-@app.route("/article1")
-def article1():
-    return render_template("article1.html")
-
-@app.route("/article2")
-def article2():
-    return render_template("article2.html")
+@app.route("/articles/<int:id>")
+def article1(id):
+    post = Post.query.get(id)
+    return render_template("base_article.html", post=post)
 
 @app.route("/create",methods=["GET","POST"])
 def create():

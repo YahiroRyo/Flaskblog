@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>新規登録</h1>
+    <h1 class="title">新規登録</h1>
     <form method="POST">
-        <label for="title">タイトル</label>
-        <input type="text" name="title">
-        <label for="body">内容</label>
-        <input type="text" name="body">
+        <label class="form-label" for="title">タイトル</label>
+        <input class="form-input" type="text" name="title">
+        <label class="form-label" for="body">内容</label>
+        <textarea class="form-input" name="body"></textarea>   
         <input type="submit" value="新規登録">
     </form>
 

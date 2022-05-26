@@ -1,0 +1,53 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #ddd;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: rgb(50, 100, 255);
+    position: relative;
+}
+a:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(50, 100, 255);
+    opacity: 0;
+    transition: .1s;
+}
+a:hover:after {
+    opacity: 1;
+}
+.inner {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    min-height: 100vh;
+    padding: 10px 50px;
+}
+.title {
+    font-size: 32px;
+}
+.form-label,
+.form-input {
+    display: block;
+}
+.form-input {
+    margin: 5px 0 20px 0;
+}
+
+.post {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}

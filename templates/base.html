@@ -2,10 +2,12 @@
 <html lang="jp">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{url_for('static', filename='global.css')}}">
     <title>Flaskblog</title>
   </head>
   <body>
-    {% block content %} {% endblock %}
-    <h4>テンプレート</h4>
+    <main class="inner">
+      {% block content %} {% endblock %}
+    </main>
   </body>
 </html>
