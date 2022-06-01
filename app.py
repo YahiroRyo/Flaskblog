@@ -34,7 +34,7 @@ def index():
     return render_template("index.html",posts=posts)
 
 @app.route("/articles/<int:id>")
-def article1(id):
+def article(id):
     post = Post.query.get(id)
     return render_template("base_article.html", post=post)
 
